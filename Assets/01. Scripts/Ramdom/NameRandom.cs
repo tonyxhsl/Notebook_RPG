@@ -5,7 +5,7 @@
 
 using UnityEngine;
 
-public class NameRandom : MonoBehaviour
+public class NameRandom
 {
     
 
