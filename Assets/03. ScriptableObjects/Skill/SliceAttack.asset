@@ -12,11 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a79b3ef942ee0148a5509884e1c2a10, type: 3}
   m_Name: SliceAttack
   m_EditorClassIdentifier: Assembly-CSharp::SkillSO
-  skillName: 
-  description: 
+  skillName: "\uBCA0\uAE30"
+  description: "\uAC80\uC744 \uD718\uB4E4\uB7EC \uC801\uC5D0\uAC8C ??\uC758 \uD53C\uD574\uB97C
+    \uC785\uD78C\uB2E4."
   icon: {fileID: 0}
-  usablePositions: 
+  usablePositions: 0100000002000000
   targetType: 0
   targetRange: 0
-  targetablePositions: 
-  effects: []
+  targetablePositions: 01000000
+  effects:
+  - effectType: 0
+    effectTarget: 0
+    amount: 0
+    attackRatio: 0
+    statusEffect: {fileID: 0}
+    moveAmount: 0

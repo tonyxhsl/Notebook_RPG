@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8e51f311515df94f8d45a62696791ba, type: 3}
   m_Name: PoisonEffect
   m_EditorClassIdentifier: Assembly-CSharp::PoisonEffectSO
-  effectName: 
+  effectName: Poison
   duration: 0
   damagePerTurn: 0
