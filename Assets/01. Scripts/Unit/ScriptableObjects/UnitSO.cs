@@ -1,12 +1,11 @@
-//summary: 모든 유닛 SO의 상위 클래스
-
 using UnityEngine;
+
+// <summary>
+// 모든 유닛 SO의 상위 클래스
+// </summary>
 
 public abstract class UnitSO : ScriptableObject
 {
-    [Header("Basic Info")]
-    public string unitName;
-
     [Header("Stats(Int)")]
     public IntRandom maxHp;
     public IntRandom attack;
@@ -17,6 +16,9 @@ public abstract class UnitSO : ScriptableObject
     [Header("Stats(float)")]
     public FloatRandom critChance;
     public FloatRandom dodgeChance;
+
+    [Header("Appearance")]
+    public SpriteRandom sprites;
 
     public UnitStats GenerateInitialStats()
     {
