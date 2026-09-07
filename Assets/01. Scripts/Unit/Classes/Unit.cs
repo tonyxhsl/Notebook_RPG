@@ -15,8 +15,17 @@ public abstract class Unit
     // 장비, 패시브, 버프까지 반영된 최종 능력치
     public UnitStats finalStats { get; protected set; }
 
+    // 현재 체력
     public int currentHp { get; protected set; }
     public bool isAlive => currentHp > 0;
+
+    // 상태 효과
+    public StatusEffectController statusEffects { get; }
+
+    protected Unit()
+    {
+        statusEffects = new StatusEffectController(this);
+    }
 
     public virtual void Init(string unitName, int level, UnitStats stats)
     {
@@ -42,11 +51,11 @@ public abstract class Unit
 
     public virtual void OnTurnStart()
     {
-
+        statusEffects.OnTurnStart();
     }
 
     public virtual void OnTurnEnd()
     {
-
+        statusEffects.OnTurnEnd();
     }
 }

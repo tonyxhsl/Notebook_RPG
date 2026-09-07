@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: PoisonEffect
   m_EditorClassIdentifier: Assembly-CSharp::PoisonEffectSO
   effectName: Poison
-  duration: 0
+  effectType: 1
+  maxStack: 999
   damagePerTurn: 0
