@@ -20,7 +20,7 @@ public enum SkillTargetRange
     Positions   // 지정된 위치의 대상 전부
 }
 
-[CreateAssetMenu(fileName = "New Skill", menuName = "Skill/Skill")]
+[CreateAssetMenu(fileName = "New Skill", menuName = "New Skill/Skill")]
 public class SkillSO : ScriptableObject
 {
     [Header("Basic Info")]

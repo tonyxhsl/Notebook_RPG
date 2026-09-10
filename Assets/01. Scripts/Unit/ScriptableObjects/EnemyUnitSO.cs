@@ -5,7 +5,7 @@ using UnityEngine;
 // 적 유닛에 대한 SO
 // </summary>
 
-[CreateAssetMenu(fileName = "New Enemy Unit", menuName = "Unit/Enemy Unit")]
+[CreateAssetMenu(fileName = "New Enemy Unit", menuName = "New Unit/Enemy Unit")]
 public class EnemyUnitSO : UnitSO
 {
     [Header("Basic Info")]
