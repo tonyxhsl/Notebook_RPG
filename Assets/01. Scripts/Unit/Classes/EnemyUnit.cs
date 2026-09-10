@@ -9,12 +9,13 @@ public class EnemyUnit : Unit
 
     public void Init(
         string unitName,
-        UnitStats stats,
         int level,
         int dropGold,
-        List<ItemSO> dropItems)
+        UnitStats stats,
+        List<ItemSO> dropItems,
+        IEnumerable<PassiveEffectSO> innatePassives = null)
     {
-        base.Init(unitName, level, stats);
+        base.Init(unitName, level, stats, innatePassives);
 
         this.dropGold = dropGold;
         this.dropItems = dropItems;

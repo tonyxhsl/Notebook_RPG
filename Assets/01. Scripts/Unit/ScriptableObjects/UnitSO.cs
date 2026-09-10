@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 // <summary>
 // 모든 유닛 SO의 상위 클래스
@@ -13,9 +14,12 @@ public abstract class UnitSO : ScriptableObject
     public IntRandom speed;
 
 
-    [Header("Stats(float)")]
+    [Header("Chance Stats (0.1 = 10%)")]
     public FloatRandom critChance;
     public FloatRandom dodgeChance;
+
+    [Header("Passive Effects")]
+    public List<PassiveEffectSO> passiveEffects = new();
 
     [Header("Appearance")]
     public SpriteRandom sprites;
@@ -27,8 +31,8 @@ public abstract class UnitSO : ScriptableObject
             attack.GetValue(),
             defense.GetValue(),
             speed.GetValue(),
-            critChance.GetValue(),
-            dodgeChance.GetValue()
+            Mathf.Clamp01(critChance.GetValue()),
+            Mathf.Clamp01(dodgeChance.GetValue())
         );
     }
 }

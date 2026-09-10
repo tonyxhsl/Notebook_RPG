@@ -14,11 +14,11 @@ public class UnitStats
     public int defense;
     public int speed;
 
-    [Header("Chance (%)")]
-    [Range(0f, 100f)]
+    [Header("Chance (float, 0~1))")]
+    [Range(0f, 1f)]
     public float critChance;
 
-    [Range(0f, 100f)]
+    [Range(0f, 1f)]
     public float dodgeChance;
 
     public UnitStats(int maxHp, int attack, int defense, int speed, float critChance, float dodgeChance)
