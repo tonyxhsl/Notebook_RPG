@@ -24,23 +24,12 @@ public enum SkillEffectTarget
     Self        // 시전자 자신
 }
 
-public enum StatType
-{
-    None,
-    MaxHp,
-    CurrentHp,
-    Attack,
-    Defense,
-    Speed,
-    CritChance,
-    DodgeChance
-}
 
 [Serializable]
 public class StatScaling
 {
     [Tooltip("계수에 사용할 스탯")]
-    public StatType statType;
+    public UnitStatType unitStatType;
 
     [Tooltip("스탯 계수. 1 = 해당 스탯 100%")]
     [Min(0f)]
